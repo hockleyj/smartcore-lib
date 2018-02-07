@@ -4,8 +4,8 @@
 var should = require('chai').should();
 var expect = require('chai').expect;
 
-var bitcore = require('../..');
-var JSUtil = bitcore.util.js;
+var smartcore = require('../..');
+var JSUtil = smartcore.util.js;
 
 describe('js utils', function() {
 

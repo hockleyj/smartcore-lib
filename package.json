@@ -1,7 +1,7 @@
 {
-  "name": "bitcore-lib",
+  "name": "smartcore-lib",
   "version": "0.15.0",
-  "description": "A pure and powerful JavaScript Bitcoin library.",
+  "description": "A pure and powerful JavaScript Smartcash library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
     "build": "gulp"
   },
   "keywords": [
+    "smartcash",
     "bitcoin",
     "transaction",
     "address",
@@ -28,7 +29,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitpay/bitcore-lib.git"
+    "url": "https://github.com/smartcash/smartcore-lib.git"
   },
   "browser": {
     "request": "browser-request"
@@ -39,10 +40,10 @@
     "buffer-compare": "=1.1.1",
     "elliptic": "=6.4.0",
     "inherits": "=2.0.1",
-    "lodash": "=4.17.4"
+    "lodash": "=4.17.4",
+    "js-sha3": "=0.7.0"
   },
   "devDependencies": {
-    "bitcore-build": "https://github.com/bitpay/bitcore-build.git#d4e8b2b2f1e2c065c3a807dcb6a6250f61d67ab3",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.8.10",

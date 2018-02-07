@@ -1,8 +1,8 @@
 'use strict';
 
 require('chai').should();
-var bitcore = require('../..');
-var Hash = bitcore.crypto.Hash;
+var smartcore = require('../..');
+var Hash = smartcore.crypto.Hash;
 
 describe('Hash', function() {
   var buf = new Buffer([0, 1, 2, 3, 253, 254, 255]);
@@ -134,6 +134,14 @@ describe('Hash', function() {
       Hash.sha512hmac(data, key).toString('hex').should.equal(hex);
     });
 
+  });
+
+  describe('#keccak256', function() {
+
+    it('calculates this known empty test string correctly', function() {
+      var hex = 'c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470';
+      Hash.keccak256("").toString('hex').should.equal(hex);
+    });
   });
 
 });
