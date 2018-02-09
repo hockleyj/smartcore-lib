@@ -17,7 +17,8 @@
     "address",
     "p2p",
     "ecies",
-    "cryptocurrency",
+    "
+cryptocurrency",
     "blockchain",
     "payment",
     "bip21",
@@ -29,7 +30,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/msg768/smartcore-lib.git"
+    "url": "https://github.com/smartcash/smartcore-lib.git"
   },
   "browser": {
     "request": "browser-request"
